@@ -473,7 +473,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8352647466200871256, guid: c0655c78e3c5f7d418f7e9e2aafe2d65, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -541,7 +542,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4673374658388074640, guid: 69d91aa7d41d68548aa9d6202189f5ad, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -609,7 +611,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inimigo1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9166856600993524060, guid: 1c00cdd4753852341bdf22260074bca4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -677,7 +680,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6970988540668262319, guid: 5f9041aa3efd2cc4c97a7e3badbef6fb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -690,6 +694,6 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1580009012}
   - {fileID: 5286092398325009747}
-  - {fileID: 6353986391926437212}
   - {fileID: 8420539552635299644}
+  - {fileID: 6353986391926437212}
   - {fileID: 6775807318298488949}
