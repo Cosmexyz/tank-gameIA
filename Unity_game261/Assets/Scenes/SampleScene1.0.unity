@@ -514,8 +514,8 @@ Rigidbody:
   m_GameObject: {fileID: 943761143}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 4
-  m_AngularDrag: 8
+  m_Drag: 2
+  m_AngularDrag: 4
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -544,6 +544,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Inimigo2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673374658388074640, guid: 69d91aa7d41d68548aa9d6202189f5ad,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.968397
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673374658388074640, guid: 69d91aa7d41d68548aa9d6202189f5ad,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.9840968
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673374658388074640, guid: 69d91aa7d41d68548aa9d6202189f5ad,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 3.019616
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673374658388074640, guid: 69d91aa7d41d68548aa9d6202189f5ad,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.02500445
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673374658388074640, guid: 69d91aa7d41d68548aa9d6202189f5ad,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.5220524
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673374658388074640, guid: 69d91aa7d41d68548aa9d6202189f5ad,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.002835751
       objectReference: {fileID: 0}
     - target: {fileID: 9204138220332284492, guid: 69d91aa7d41d68548aa9d6202189f5ad,
         type: 3}
@@ -595,8 +625,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4673374658388074640, guid: 69d91aa7d41d68548aa9d6202189f5ad, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -664,8 +693,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inimigo1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 9166856600993524060, guid: 1c00cdd4753852341bdf22260074bca4, type: 3}
+    - target: {fileID: 9166856600993524060, guid: 1c00cdd4753852341bdf22260074bca4,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.968397
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166856600993524060, guid: 1c00cdd4753852341bdf22260074bca4,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.9840968
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166856600993524060, guid: 1c00cdd4753852341bdf22260074bca4,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 3.019616
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166856600993524060, guid: 1c00cdd4753852341bdf22260074bca4,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.02500445
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166856600993524060, guid: 1c00cdd4753852341bdf22260074bca4,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.5220524
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166856600993524060, guid: 1c00cdd4753852341bdf22260074bca4,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.002835751
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -682,6 +740,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Inimigo3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6970988540668262319, guid: 5f9041aa3efd2cc4c97a7e3badbef6fb,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.968397
+      objectReference: {fileID: 0}
+    - target: {fileID: 6970988540668262319, guid: 5f9041aa3efd2cc4c97a7e3badbef6fb,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.9840968
+      objectReference: {fileID: 0}
+    - target: {fileID: 6970988540668262319, guid: 5f9041aa3efd2cc4c97a7e3badbef6fb,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 3.019616
+      objectReference: {fileID: 0}
+    - target: {fileID: 6970988540668262319, guid: 5f9041aa3efd2cc4c97a7e3badbef6fb,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.02500445
+      objectReference: {fileID: 0}
+    - target: {fileID: 6970988540668262319, guid: 5f9041aa3efd2cc4c97a7e3badbef6fb,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.5220524
+      objectReference: {fileID: 0}
+    - target: {fileID: 6970988540668262319, guid: 5f9041aa3efd2cc4c97a7e3badbef6fb,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.002835751
       objectReference: {fileID: 0}
     - target: {fileID: 7083747737443860923, guid: 5f9041aa3efd2cc4c97a7e3badbef6fb,
         type: 3}
@@ -733,8 +821,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6970988540668262319, guid: 5f9041aa3efd2cc4c97a7e3badbef6fb, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
