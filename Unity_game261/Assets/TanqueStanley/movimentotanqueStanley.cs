@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class movimentotanqueStanley : MonoBehaviour
 {
-    public float velocidadeAndar = 5f;
+    public float velocidadeAndar = 10f;
     public float velocidadeGirar = 100f;
 
     void Update()
