@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8785223833281789672}
   - component: {fileID: 1892648244703578111}
   - component: {fileID: 2598404260336677311}
+  - component: {fileID: -3369836271767789599}
   m_Layer: 0
   m_Name: TanqueUsuarioV2
   m_TagString: Untagged
@@ -99,6 +100,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &-3369836271767789599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141769559328698610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0231537117cd32a40a958b81d3642d87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1 &3766295495712704001
 GameObject:
   m_ObjectHideFlags: 0
