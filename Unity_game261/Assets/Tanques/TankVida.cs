@@ -85,4 +85,18 @@ public class TankVida : MonoBehaviour
             TomarDano(10f);
         }
     }
+
+    public int vida = 100;
+    public GameOverController gameOverController;
+
+    public void TomarDano(int dano)
+    {
+        vida -= dano;
+
+        if (vida <= 0)
+        {
+            vida = 0;
+            gameOverController.MostrarGameOver();
+        }
+    }
 }
