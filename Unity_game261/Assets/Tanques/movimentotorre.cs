@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class movimentotorre : MonoBehaviour
+public class MovimentoTorre : MonoBehaviour
 {
     public float velocidadeRotacao = 10f;
-    public float limiteRotacao = 90f; // 90 para cada lado = 180 no total
+    public float limiteRotacao = 90f; // 90 graus para cada lado = 180 no total
 
     private float rotacaoInicialLocalY;
 
@@ -14,6 +14,8 @@ public class movimentotorre : MonoBehaviour
 
     void Update()
     {
+        if (Camera.main == null) return;
+
         Plane plano = new Plane(Vector3.up, transform.position);
         Ray raio = Camera.main.ScreenPointToRay(Input.mousePosition);
 

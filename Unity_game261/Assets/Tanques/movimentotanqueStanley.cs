@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class movimentotanqueStanley : MonoBehaviour
+public class MovimentoTanqueStanley : MonoBehaviour
 {
     public float velocidadeAndar = 10f;
     public float velocidadeGirar = 100f;
@@ -10,6 +10,7 @@ public class movimentotanqueStanley : MonoBehaviour
         float andar = Input.GetAxis("Vertical");
         float girar = Input.GetAxis("Horizontal");
 
+        // Desabilita movimento para frente se A ou D for pressionado
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
             andar = 0f;

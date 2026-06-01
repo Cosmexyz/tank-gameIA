@@ -1,12 +1,13 @@
 using UnityEngine;
 
-public class movimentomira : MonoBehaviour
+public class MovimentoMira : MonoBehaviour
 {
     public float movimentoMiraVertical = 100f;
     public float anguloMaximo = -45f;
     public float anguloMinimo = 0f;
 
     private float anguloX = 0f;
+
     void Start()
     {
         anguloX = 0f;

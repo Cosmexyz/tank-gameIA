@@ -1,14 +1,14 @@
 using UnityEngine;
 
-public class cameratopdown : MonoBehaviour
+public class CameraTopDown : MonoBehaviour
 {
-    public Terrain terrain; // referencia do terreno (pegar dimenses)
-    public Vector3 offset = new Vector3(0f, 10f, -15f); // posiçao da camera no player
+    public Terrain terrain;
+    public Vector3 offset = new Vector3(0f, 10f, -15f);
 
-    public Transform player; // referencia player
-    private float minX, maxX, minZ, maxZ; // limite terreno
+    public Transform player;
+    private float minX, maxX, minZ, maxZ;
 
-   void Start()
+    void Start()
     {
         Vector3 terrainPos = terrain.transform.position;
         Vector3 terrainSize = terrain.terrainData.size;

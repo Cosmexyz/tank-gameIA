@@ -4,85 +4,55 @@ using UnityEngine.UI;
 public class TankVida : MonoBehaviour
 {
     public float maxHealth = 100f;
+    public Slider healthSlider;
 
     private float currentHealth;
 
-    private GameObject barraVidaObj;
-    private Slider barraDeVida;
-
     void Awake()
     {
-        // Procura TODOS os objetos da cena
-        GameObject[] objs = Resources.FindObjectsOfTypeAll<GameObject>();
-
-        foreach (GameObject obj in objs)
-        {
-            if (obj.name == "Barravida")
-            {
-                barraVidaObj = obj;
-            }
-
-            if (obj.name == "vida")
-            {
-                barraDeVida = obj.GetComponent<Slider>();
-            }
-        }
-
-        // Inicializa vida
         currentHealth = maxHealth;
 
-        // ESCONDE A BARRA
-        if (barraVidaObj != null)
+        if (healthSlider != null)
         {
-            barraVidaObj.SetActive(false);
+            healthSlider.maxValue = maxHealth;
+            healthSlider.value = currentHealth;
+            healthSlider.gameObject.SetActive(false);
         }
     }
 
-    void Start()
-    {
-        if (barraDeVida != null)
-        {
-            barraDeVida.maxValue = maxHealth;
-            barraDeVida.value = currentHealth;
-        }
-    }
-
-    // CHAMAR NO BOTÃO COMEÇAR
     public void MostrarBarra()
     {
-        if (barraVidaObj != null)
+        if (healthSlider != null)
         {
-            // ATIVA DEFINITIVAMENTE
-            barraVidaObj.SetActive(true);
-
-            // ATIVA TODOS OS FILHOS
-            foreach (Transform t in barraVidaObj.GetComponentsInChildren<Transform>(true))
-            {
-                t.gameObject.SetActive(true);
-            }
-
-            Debug.Log("BARRA ATIVADA");
+            healthSlider.gameObject.SetActive(true);
+            Debug.Log("Health bar activated");
         }
     }
 
     public void TomarDano(float dano)
     {
         currentHealth -= dano;
-
         currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
 
-        if (barraDeVida != null)
+        if (healthSlider != null)
         {
-            barraDeVida.value = currentHealth;
+            healthSlider.value = currentHealth;
+        }
+
+        if (currentHealth <= 0)
+        {
+            Morrer();
         }
     }
 
-    void Update()
+    public float GetHealthPercentage()
     {
-        // TESTE
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            TomarDano(10f);
-        }
+        return currentHealth / maxHealth;
+    }
+
+    private void Morrer()
+    {
+        Debug.Log(gameObject.name + " died");
+        gameObject.SetActive(false);
     }
 }

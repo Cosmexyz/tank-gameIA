@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Mover_teste01 : MonoBehaviour
+// Este script é um template de teste e pode ser usado como base para novos comportamentos
+public class MoverTeste01 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float velocidade = 5f;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+
+        Vector3 direcao = new Vector3(horizontal, 0f, vertical).normalized;
+        transform.position += direcao * velocidade * Time.deltaTime;
     }
 }

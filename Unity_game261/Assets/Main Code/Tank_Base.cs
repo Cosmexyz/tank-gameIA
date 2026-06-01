@@ -1,18 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Tank_Base : MonoBehaviour
+// Base class for all tank types. Inheritors should implement movement and attack logic.
+public class TankBase : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] protected float maxHealth = 100f;
+    protected float currentHealth;
+    protected bool isAlive = true;
+
+    protected virtual void Start()
     {
-        
+        currentHealth = maxHealth;
     }
 
-    // Update is called once per frame
-    void Update()
+    public virtual void TakeDamage(float damage)
     {
-        
+        if (!isAlive) return;
+
+        currentHealth -= damage;
+        currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    public virtual void Die()
+    {
+        isAlive = false;
+        Debug.Log(gameObject.name + " was destroyed");
+        Destroy(gameObject);
+    }
+
+    public float GetHealthPercentage()
+    {
+        return currentHealth / maxHealth;
+    }
+
+    public bool IsAlive()
+    {
+        return isAlive;
     }
 }
