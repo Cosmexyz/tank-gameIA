@@ -55,4 +55,18 @@ public class TankVida : MonoBehaviour
         Debug.Log(gameObject.name + " died");
         gameObject.SetActive(false);
     }
+
+    public int vida = 100;
+    public GameOverController gameOverController;
+
+    public void TomarDano(int dano)
+    {
+        vida -= dano;
+
+        if (vida <= 0)
+        {
+            vida = 0;
+            gameOverController.MostrarGameOver();
+        }
+    }
 }
