@@ -3041,7 +3041,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 724794688}
-  barraVida: {fileID: 1705891315}
+  healthBar: {fileID: 0}
+  playerHealth: {fileID: 0}
 --- !u!4 &1254687249
 Transform:
   m_ObjectHideFlags: 0
