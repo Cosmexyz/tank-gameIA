@@ -501,7 +501,6 @@ GameObject:
   - component: {fileID: 5707311850642894284}
   - component: {fileID: 8352647466200871256}
   - component: {fileID: 7937318614840253797}
-  - component: {fileID: 5431823231976935574}
   - component: {fileID: 4123232868692401558}
   m_Layer: 0
   m_Name: TanqueUsuario
@@ -590,22 +589,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!114 &5431823231976935574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5310489270402759650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0231537117cd32a40a958b81d3642d87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  healthSlider: {fileID: 0}
-  vida: 100
-  gameOverController: {fileID: 0}
 --- !u!114 &4123232868692401558
 MonoBehaviour:
   m_ObjectHideFlags: 0
