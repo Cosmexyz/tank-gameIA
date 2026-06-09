@@ -1002,7 +1002,7 @@ Transform:
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -1.24, y: 3, z: 0}
+  m_LocalPosition: {x: 71.3, y: 175.9, z: -125.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1603,7 +1603,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.3, y: 0, z: -1}
-  m_LocalScale: {x: 4.5143, y: 4.5143, z: 199.74878}
+  m_LocalScale: {x: 4.5143, y: 40, z: 199.74878}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2717,7 +2717,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1317156857}
   - component: {fileID: 1317156859}
-  - component: {fileID: 1317156858}
   m_Layer: 5
   m_Name: BarraVidaInimigo
   m_TagString: Untagged
@@ -2747,20 +2746,6 @@ RectTransform:
   m_AnchoredPosition: {x: 10, y: -10}
   m_SizeDelta: {x: 200, y: 25}
   m_Pivot: {x: 1, y: 1}
---- !u!114 &1317156858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317156856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e95e9bd82c52ad409c0eb1fe882d3f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barraVida: {fileID: 0}
-  vidaMaxima: 100
 --- !u!114 &1317156859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2987,7 +2972,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -100, y: 0, z: -0.8}
-  m_LocalScale: {x: 4.258926, y: 4.258926, z: 201.63965}
+  m_LocalScale: {x: 4.258926, y: 40, z: 201.63965}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3481,7 +3466,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.0034771762, y: 0.70758903, z: 0.00643888, w: -0.70658636}
   m_LocalPosition: {x: -50.4, y: -0, z: -98.5}
-  m_LocalScale: {x: 5.849243, y: 4.409692, z: 102.792076}
+  m_LocalScale: {x: 5.849243, y: 40, z: 102.792076}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3720,7 +3705,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.0034771762, y: 0.70758903, z: 0.00643888, w: -0.70658636}
   m_LocalPosition: {x: -50.4745, y: 0, z: 97.4071}
-  m_LocalScale: {x: 5.849243, y: 4.409692, z: 102.792076}
+  m_LocalScale: {x: 5.849243, y: 40, z: 102.792076}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4013,7 +3998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e22b070e2db936e4d93ce43598f48452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TanqueUsuario1: {fileID: 8156154157406376131, guid: 89216c7ed260f7f48a0c7f25c76c63d8,
+  TanqueUsuario1: {fileID: 4396630670438824209, guid: 13bdf23a7ec0e6248b198a6ab073fa8b,
     type: 3}
   spawnPoint: {fileID: 1939362756}
 --- !u!4 &1939362756

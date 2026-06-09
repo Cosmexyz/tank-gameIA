@@ -6,8 +6,8 @@ public class Bala : MonoBehaviour
     {
         Debug.Log("Acertou: " + collision.gameObject.name);
 
-    VidaInimigo vidaInimigo =
-        collision.gameObject.GetComponent<VidaInimigo>();
+        VidaInimigo vidaInimigo =
+        collision.gameObject.GetComponentInParent<VidaInimigo>();
 
         if (vidaInimigo != null)
         {
