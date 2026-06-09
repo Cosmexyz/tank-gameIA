@@ -4,9 +4,9 @@ using UnityEngine.UI;
 public class VidaInimigo : MonoBehaviour
 {
     public Slider barraVida;
+    public GameObject telaVitoria;
 
-
-public float vidaMaxima = 100f;
+    public float vidaMaxima = 100f;
     private float vidaAtual;
 
     void Start()
@@ -27,7 +27,22 @@ public float vidaMaxima = 100f;
         barraVida.value = vidaAtual;
 
         Debug.Log("Vida inimigo: " + vidaAtual);
+
+        if (vidaAtual <= 0)
+        {
+            VencerJogo();
+        }
     }
 
+    void VencerJogo()
+    {
+        if (telaVitoria != null)
+        {
+            telaVitoria.SetActive(true);
+        }
 
+        Time.timeScale = 0f;
+
+        Debug.Log("Você venceu!");
+    }
 }

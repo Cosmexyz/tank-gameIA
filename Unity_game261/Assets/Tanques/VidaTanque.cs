@@ -18,15 +18,6 @@ public class VidaTanque : MonoBehaviour
         barraVida.value = vidaAtual;
     }
 
-    void Update()
-    {
-        // TESTE
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            TomarDano(10);
-        }
-    }
-
     public void TomarDano(float dano)
     {
         vidaAtual -= dano;
@@ -36,6 +27,6 @@ public class VidaTanque : MonoBehaviour
 
         barraVida.value = vidaAtual;
 
-        Debug.Log("Vida atual: " + vidaAtual);
+        Debug.Log("Vida jogador: " + vidaAtual);
     }
 }
