@@ -10,16 +10,24 @@ public class GameManager : MonoBehaviour
     {
         menu.SetActive(false);
 
-        if (barraVida != null)
-        {
-            barraVida.SetActive(true);
-        }
-
-        if (barraVidaInimigo != null)
-        {
-            barraVidaInimigo.SetActive(true);
-        }
+        MostrarBarra(barraVida);
+        MostrarBarra(barraVidaInimigo);
 
         Debug.Log("Jogo iniciado!");
+    }
+
+    void MostrarBarra(GameObject barra)
+    {
+        if (barra != null)
+        {
+            CanvasGroup cg = barra.GetComponent<CanvasGroup>();
+
+            if (cg != null)
+            {
+                cg.alpha = 1;
+                cg.interactable = true;
+                cg.blocksRaycasts = true;
+            }
+        }
     }
 }

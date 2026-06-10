@@ -365,7 +365,7 @@ RectTransform:
   m_Father: {fileID: 1654306682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1446,13 +1446,14 @@ GameObject:
   - component: {fileID: 661236816}
   - component: {fileID: 661236815}
   - component: {fileID: 661236817}
+  - component: {fileID: 661236818}
   m_Layer: 5
   m_Name: BarraVida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &661236815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1540,6 +1541,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barraVida: {fileID: 0}
   vidaMaxima: 100
+--- !u!225 &661236818
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661236814}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &709710910
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,13 +3017,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1317156857}
   - component: {fileID: 1317156859}
+  - component: {fileID: 1317156860}
   m_Layer: 5
   m_Name: BarraVidaInimigo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1317156857
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3084,6 +3098,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!225 &1317156860
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317156856}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &1345588131
 GameObject:
   m_ObjectHideFlags: 0
@@ -3454,7 +3480,7 @@ RectTransform:
   m_Father: {fileID: 1960251643}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
