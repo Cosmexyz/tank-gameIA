@@ -1,25 +1,29 @@
 using UnityEngine;
 
+/// <summary>
+/// Bala do jogador.
+/// Ao acertar um inimigo, notifica o EnemyAI para registrar o padrão de ataque.
+/// </summary>
 public class Bala : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Acertou: " + collision.gameObject.name);
 
-        VidaInimigo vidaInimigo =
-        collision.gameObject.GetComponentInParent<VidaInimigo>();
-
+        // Tenta achar VidaInimigo (script de vida do inimigo)
+        VidaInimigo vidaInimigo = collision.gameObject.GetComponentInParent<VidaInimigo>();
         if (vidaInimigo != null)
         {
-            Debug.Log("VidaInimigo encontrada!");
             vidaInimigo.TomarDano(10);
         }
-        else
+
+        // ── NOVO: notifica EnemyAI para aprender com o ataque ──
+        EnemyAI ia = collision.gameObject.GetComponentInParent<EnemyAI>();
+        if (ia != null)
         {
-            Debug.Log("VidaInimigo N�O encontrada!");
+            ia.RegistrarAtaquePlayer();
         }
 
         Destroy(gameObject);
     }
-
 }
