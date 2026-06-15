@@ -11,6 +11,16 @@ public class VidaTanque : MonoBehaviour
     void Start()
     {
         barraVida = GetComponent<Slider>();
+// Updated upstream
+
+
+        if (barraVida == null)
+        {
+            Debug.LogError("VidaTanque precisa estar no mesmo objeto que o Slider da BarraVida!");
+            return;
+        }
+
+// Stashed changes
         vidaAtual = vidaMaxima;
         barraVida.maxValue = vidaMaxima;
         barraVida.value    = vidaAtual;
